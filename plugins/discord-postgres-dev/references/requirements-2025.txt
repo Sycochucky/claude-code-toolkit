@@ -1,0 +1,57 @@
+# Discord Bot with PostgreSQL - 2025 Requirements
+# Production-ready libraries for modern Discord bot development
+
+# Python Version: 3.11+ (3.12+ recommended for best performance)
+
+# ===== Core Discord =====
+discord.py>=2.4.0                    # Latest Discord API v10 support
+
+# ===== Database =====
+asyncpg>=0.29.0                       # High-performance async PostgreSQL
+SQLAlchemy>=2.0.30                    # Modern async ORM
+alembic>=1.13.0                       # Database migrations
+greenlet>=3.0.0                       # Required for SQLAlchemy async
+psycopg[binary]>=3.2.0                # Modern psycopg3 (optional alternative)
+
+# ===== Data Validation =====
+pydantic>=2.7.0                       # Data validation and settings
+pydantic-settings>=2.2.0              # Settings management
+
+# ===== Environment =====
+python-dotenv>=1.0.0                  # Environment variables
+
+# ===== Async & HTTP =====
+aiohttp>=3.9.0                        # Async HTTP (required by discord.py)
+aiofiles>=23.2.0                      # Async file operations
+
+# ===== Utilities =====
+python-dateutil>=2.9.0                # Date utilities
+pytz>=2024.1                          # Timezone support
+
+# ===== Optional: Enhanced Features =====
+# Pillow>=10.3.0                      # Image manipulation (rank cards, etc.)
+# APScheduler>=3.10.0                 # Advanced task scheduling
+# aiocache>=0.12.0                    # Async caching
+# redis>=5.0.0                        # Redis client (for caching)
+
+# ===== Optional: Web Dashboard =====
+# fastapi>=0.110.0                    # Modern async web framework
+# uvicorn[standard]>=0.29.0           # ASGI server
+
+# ===== Testing =====
+# pytest>=8.1.0                       # Testing framework
+# pytest-asyncio>=0.23.0              # Async testing
+
+# ===== Development Tools =====
+# ruff>=0.3.0                         # Fast linter & formatter
+# mypy>=1.9.0                         # Type checker
+
+# ===== Installation Instructions =====
+# 1. Ensure Python 3.11+ is installed
+# 2. Install PostgreSQL 15+ on your system
+# 3. Create virtual environment: python -m venv venv
+# 4. Activate: venv\Scripts\activate (Windows) or source venv/bin/activate (Linux/Mac)
+# 5. Install: pip install -r requirements.txt
+# 6. Create .env file with:
+#    DISCORD_TOKEN=your_bot_token
+#    DATABASE_URL=postgresql+asyncpg://user:pass@localhost:5432/dbname

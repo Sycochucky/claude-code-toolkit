@@ -1,0 +1,8 @@
+{
+  "name": "discord-postgres-dev",
+  "description": "Expert agents for Discord.py bot development with PostgreSQL using 2025 modern libraries and best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "Discord Bot Developer"
+  }
+}

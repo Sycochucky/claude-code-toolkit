@@ -1,0 +1,8 @@
+{
+  "name": "time-awareness",
+  "description": "Automatic temporal context with environment variables for time-aware Claude Code sessions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Time Awareness Developer"
+  }
+}

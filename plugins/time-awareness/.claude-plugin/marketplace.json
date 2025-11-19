@@ -1,0 +1,17 @@
+{
+  "name": "local-time-awareness",
+  "owner": {
+    "name": "Local Developer"
+  },
+  "plugins": [
+    {
+      "name": "time-awareness",
+      "description": "Automatic temporal context with environment variables for time-aware Claude Code sessions. Exports 20+ time/date variables on every session start.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Time Awareness Developer"
+      },
+      "source": "./"
+    }
+  ]
+}
