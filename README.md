@@ -41,17 +41,17 @@ Complete guides and examples in the [`docs/`](./docs/) folder.
 **Method 1: From GitHub (Recommended)**
 ```bash
 # Add this repository as a marketplace
-claude plugin marketplace add YOUR-USERNAME/claude-code-toolkit
+claude plugin marketplace add Sycochucky/claude-code-toolkit
 
 # Install individual plugins
-claude plugin install time-awareness@YOUR-USERNAME-claude-code-toolkit
-claude plugin install discord-postgres-dev@YOUR-USERNAME-claude-code-toolkit
+claude plugin install time-awareness@Sycochucky-claude-code-toolkit
+claude plugin install discord-postgres-dev@Sycochucky-claude-code-toolkit
 ```
 
 **Method 2: Local Installation**
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/claude-code-toolkit.git
+git clone https://github.com/Sycochucky/claude-code-toolkit.git
 cd claude-code-toolkit
 
 # Add as local marketplace
@@ -85,7 +85,7 @@ Exports 20+ environment variables on every session start:
 
 **Installation:**
 ```bash
-claude plugin install time-awareness@YOUR-USERNAME-claude-code-toolkit
+claude plugin install time-awareness@Sycochucky-claude-code-toolkit
 ```
 
 **Usage:**
@@ -117,7 +117,7 @@ Three specialized agents using 2025 best practices:
 
 **Installation:**
 ```bash
-claude plugin install discord-postgres-dev@YOUR-USERNAME-claude-code-toolkit
+claude plugin install discord-postgres-dev@Sycochucky-claude-code-toolkit
 ```
 
 **Usage:**
@@ -246,8 +246,8 @@ Contributions are welcome! Here's how you can help:
 
 Found a bug or have a feature request?
 
-- **[Open an Issue](https://github.com/YOUR-USERNAME/claude-code-toolkit/issues)**
-- **[Start a Discussion](https://github.com/YOUR-USERNAME/claude-code-toolkit/discussions)**
+- **[Open an Issue](https://github.com/Sycochucky/claude-code-toolkit/issues)**
+- **[Start a Discussion](https://github.com/Sycochucky/claude-code-toolkit/discussions)**
 
 ---
 
@@ -275,10 +275,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Stats
 
-![GitHub stars](https://img.shields.io/github/stars/YOUR-USERNAME/claude-code-toolkit?style=social)
-![GitHub forks](https://img.shields.io/github/forks/YOUR-USERNAME/claude-code-toolkit?style=social)
-![GitHub issues](https://img.shields.io/github/issues/YOUR-USERNAME/claude-code-toolkit)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/YOUR-USERNAME/claude-code-toolkit)
+![GitHub stars](https://img.shields.io/github/stars/Sycochucky/claude-code-toolkit?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Sycochucky/claude-code-toolkit?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Sycochucky/claude-code-toolkit)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Sycochucky/claude-code-toolkit)
 
 ---
 
