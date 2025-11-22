@@ -1,11 +1,14 @@
 {
-  "SessionStart": {
-    "hooks": [
+  "hooks": {
+    "SessionStart": [
       {
-        "name": "setup-temporal-context",
-        "description": "Export comprehensive temporal environment variables on session start",
-        "command": "bash",
-        "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/setup-temporal-context.sh"]
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/setup-temporal-context.sh",
+            "timeout": 60
+          }
+        ]
       }
     ]
   }
