@@ -1,0 +1,28 @@
+{
+  "name": "claude-code-toolkit",
+  "description": "Powerful plugins and tools for Claude Code - Time awareness, Discord bot development agents, and more",
+  "owner": {
+    "name": "Sycochucky",
+    "url": "https://github.com/Sycochucky"
+  },
+  "plugins": [
+    {
+      "name": "time-awareness",
+      "description": "Automatic temporal context with environment variables for time-aware Claude Code sessions. Exports 20+ time/date variables on every session start via SessionStart hook.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sycochucky"
+      },
+      "source": "./plugins/time-awareness"
+    },
+    {
+      "name": "discord-postgres-dev",
+      "description": "Expert agents for Discord.py bot development with PostgreSQL using 2025 modern libraries and best practices. Includes discordpy-expert, postgres-expert, and bot-builder coordinator agents.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sycochucky"
+      },
+      "source": "./plugins/discord-postgres-dev"
+    }
+  ]
+}
