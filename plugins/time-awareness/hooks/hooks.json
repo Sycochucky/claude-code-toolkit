@@ -1,6 +1,6 @@
 {
-  "hooks": {
-    "SessionStart": [
+  "SessionStart": {
+    "hooks": [
       {
         "name": "setup-temporal-context",
         "description": "Export comprehensive temporal environment variables on session start",
