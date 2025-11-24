@@ -23,6 +23,15 @@
         "name": "Sycochucky"
       },
       "source": "./plugins/discord-postgres-dev"
+    },
+    {
+      "name": "autonomous-orchestrator",
+      "description": "Multi-agent plugin for autonomous agent loops and complex self-directed workflows with intelligent model routing. Includes orchestrator (Opus) and head-dev-coder (Sonnet) agents.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sycochucky"
+      },
+      "source": "./plugins/autonomous-orchestrator"
     }
   ]
 }
