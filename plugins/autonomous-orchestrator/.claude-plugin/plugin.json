@@ -1,0 +1,16 @@
+{
+  "name": "autonomous-orchestrator",
+  "version": "1.0.0",
+  "description": "Multi-agent plugin for autonomous agent loops and complex self-directed workflows with intelligent model routing",
+  "author": {
+    "name": "Claude Code Plugins"
+  },
+  "keywords": [
+    "autonomous",
+    "orchestration",
+    "multi-agent",
+    "workflow",
+    "loops",
+    "model-routing"
+  ]
+}
