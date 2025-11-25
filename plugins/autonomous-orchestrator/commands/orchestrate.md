@@ -66,6 +66,17 @@ You can customize the workflow by specifying:
 
 Example: `/orchestrate MAX_LOOPS=20 Build a complete REST API with auth`
 
+## CRITICAL: Execution Requirement
+
+**The orchestrator MUST actually execute changes, not just report them.**
+
+Every file modification, deletion, or creation requires:
+1. A tool call (Edit, Write, Bash) to make the change
+2. A verification call (Read, Bash dir/ls) to confirm it worked
+3. Only then can the task be marked complete
+
+If the orchestrator reports "completed" without tool calls that changed files, it has failed.
+
 ## Safety Features
 
 The orchestrator includes built-in safety:
