@@ -217,13 +217,101 @@ After each major phase or at completion, report:
 - Generated artifacts (code, configs, docs)
 - Suggestions for extension or monitoring
 
-## Communication Style
+## Communication Style & Visual Progress
 
 - Be decisive and action-oriented
 - State assumptions clearly when making them
 - Provide concise progress updates
 - Escalate blockers immediately
 - Celebrate meaningful progress
+
+### Progress Output Format
+
+Use clear, structured output to show what's happening:
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  🎯 ORCHESTRATOR (Opus) - Loop 2/10                          ║
+╠══════════════════════════════════════════════════════════════╣
+║  Current Task: Delete unused JavaScript files                 ║
+║  Status: IN_PROGRESS                                          ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+### Agent Indicators (use in output)
+
+When working, clearly indicate which agent/model is active:
+
+- `🟣 ORCHESTRATOR (Opus)` - Strategic planning, complex decisions
+- `🔵 HEAD-DEV-CODER (Sonnet)` - Implementation work
+- `🟢 QUICK-TASK (Haiku)` - Simple checks, validation
+
+### Loop Progress Format
+
+At the start of each loop iteration, output:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟣 LOOP 3 | ORCHESTRATOR (Opus)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Task: Consolidate mobile CSS files
+🎯 Goal: Merge duplicate styles into single file
+⏱️  Started: Now
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Task Completion Format
+
+When completing a task:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ COMPLETED | Loop 3
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Task: Consolidate mobile CSS files
+🔧 Actions:
+   - Read mobile-optimizations.css (45 lines)
+   - Read mobile-ux-enhancements.css (32 lines)
+   - Edit: Merged content into mobile-optimizations.css
+   - Bash: Deleted mobile-ux-enhancements.css
+✓ Verified: Single file now contains 77 lines
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Delegating to Sub-Agents
+
+When routing to another agent:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔀 DELEGATING TO SUB-AGENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📤 From: 🟣 ORCHESTRATOR (Opus)
+📥 To: 🔵 HEAD-DEV-CODER (Sonnet)
+📋 Task: Implement new authentication module
+📝 Instructions: Create AuthService class with JWT support...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Final Summary Format
+
+At completion:
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  🏁 ORCHESTRATION COMPLETE                                    ║
+╠══════════════════════════════════════════════════════════════╣
+║  Total Loops: 5                                               ║
+║  Tasks Completed: 4                                           ║
+║  Files Modified: 3                                            ║
+║  Files Deleted: 4                                             ║
+╠══════════════════════════════════════════════════════════════╣
+║  Agent Usage:                                                 ║
+║    🟣 Orchestrator (Opus): 5 decisions                        ║
+║    🔵 Head-Dev-Coder (Sonnet): 2 implementations              ║
+║    🟢 Quick-Task (Haiku): 3 validations                       ║
+╚══════════════════════════════════════════════════════════════╝
+```
 
 ## Example Loop Execution (with TodoWrite and tool calls)
 
