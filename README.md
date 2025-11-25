@@ -21,12 +21,6 @@ A collection of powerful plugins and tools to supercharge your Claude Code exper
    - Complete bot builder coordinator
    - 2025 modern libraries and patterns
 
-3. **[Autonomous Orchestrator](./plugins/autonomous-orchestrator/)** - Multi-agent autonomous workflows
-   - Orchestrator agent (Opus) for planning and loop control
-   - Head Dev Coder agent (Sonnet) for implementation
-   - Intelligent model routing (Haiku/Sonnet/Opus)
-   - Built-in stopping criteria and progress detection
-
 ### 🛠️ Tools
 
 - **[Time Awareness Installer](./tools/)** - Shell installer for time-awareness wrapper script
@@ -52,7 +46,6 @@ claude plugin marketplace add Sycochucky/claude-code-toolkit
 # Install individual plugins
 claude plugin install time-awareness@Sycochucky-claude-code-toolkit
 claude plugin install discord-postgres-dev@Sycochucky-claude-code-toolkit
-claude plugin install autonomous-orchestrator@Sycochucky-claude-code-toolkit
 ```
 
 **Method 2: Local Installation**
@@ -141,46 +134,6 @@ Task(
 
 ---
 
-### Autonomous Orchestrator Plugin
-
-**Multi-agent system for autonomous workflows**
-
-Two specialized agents with intelligent model routing:
-- **orchestrator** (Opus) - Planning, routing, loop control
-- **head-dev-coder** (Sonnet) - Implementation, systems engineering
-
-**Features:**
-- ✅ Autonomous execution loops with stopping criteria
-- ✅ Intelligent model routing (Haiku/Sonnet/Opus)
-- ✅ Task board management and progress tracking
-- ✅ Diminishing returns detection
-- ✅ Loop control patterns skill
-
-**Installation:**
-```bash
-claude plugin install autonomous-orchestrator@Sycochucky-claude-code-toolkit
-```
-
-**Usage:**
-```bash
-# Launch an autonomous workflow
-/orchestrate Build a complete authentication system with JWT tokens
-
-# With configuration
-/orchestrate MAX_LOOPS=20 Refactor the database layer for performance
-```
-
-**Model Routing:**
-| Complexity | Model | Use Cases |
-|------------|-------|-----------|
-| Trivial | Haiku | Format, lint, validate, quick checks |
-| Standard | Sonnet | Functions, classes, tests, docs |
-| Complex | Opus | Architecture, debugging, strategy |
-
-[Full Documentation →](./plugins/autonomous-orchestrator/README.md)
-
----
-
 ## 🛠️ Tools
 
 ### Time Awareness Installer (Legacy)
@@ -218,16 +171,10 @@ claude-code-toolkit/
 │   │   ├── .claude-plugin/
 │   │   ├── hooks/
 │   │   └── README.md
-│   ├── discord-postgres-dev/    # Discord + PostgreSQL plugin
-│   │   ├── .claude-plugin/
-│   │   ├── agents/
-│   │   ├── references/
-│   │   └── README.md
-│   └── autonomous-orchestrator/ # Multi-agent autonomous workflows
+│   └── discord-postgres-dev/    # Discord + PostgreSQL plugin
 │       ├── .claude-plugin/
 │       ├── agents/
-│       ├── commands/
-│       ├── skills/
+│       ├── references/
 │       └── README.md
 ├── tools/                        # Standalone tools
 │   ├── install-claude-time-awareness.sh
@@ -252,7 +199,6 @@ claude-code-toolkit/
 
 - [Time Awareness Plugin](./plugins/time-awareness/README.md)
 - [Discord-Postgres Dev Plugin](./plugins/discord-postgres-dev/README.md)
-- [Autonomous Orchestrator Plugin](./plugins/autonomous-orchestrator/README.md)
 - [Time Awareness Tool (Legacy)](./docs/CLAUDE-TIME-AWARENESS-README.md)
 
 ---
